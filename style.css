@@ -1,233 +1,235 @@
-/* Geral */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Roboto";
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+#sobre {
+  flex: 1.4;
+  padding: 2rem 4rem;
+}
+
+#marca {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+#marca img {
+  height: 50px;
+  margin-right: 0.6rem;
+}
+
+#exclusivo {
+  text-transform: uppercase;
+  color: #0075ff;
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+#sobre h2 {
+  font-size: 2.4rem;
+  max-width: 500px;
+  margin-bottom: 1rem;
+}
+
+#data {
+  text-transform: uppercase;
+  color: #aaa;
+  margin-bottom: 1rem;
+}
+
+#descricao {
+  max-width: 500px;
+  margin-bottom: 1rem;
+  line-height: 1.4rem;
+}
+
+#sobre h4 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+
+
+#usuarios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.usuario {
+  border: 2px solid #ccc;
+  padding: 1rem;
+  width: 180px;
+  text-align: center;
+}
+
+.usuario img {
+  width: 120px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.usuario .nome {
+  font-weight: bold;
+  margin-bottom: 0.6rem;
+}
+
+.usuario .funcao {
+  color:#aaa;
+  font-size: 0.9rem;
+}
+
+
+#form {
+  flex: 1;
+  background-image: url("./img/bg.jpg");
+  background-size: cover;
+  color: #fff;
+}
+
+#interno {
+  margin: 3rem;
+  padding: 3rem;
+  border: 2px solid #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#interno h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#interno p {
+  margin-bottom: 1rem;
+}
+
+#registrar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+#nome {
+  display: flex;
+  gap: 0.5rem;
+}
+
+#registrar input {
+  padding: 0.8rem 0.6rem;
+  border: none;
+  border-radius: 3px;
+}
+
+#email {
+  min-width: 100%;
+}
+
+#registrar input[type="submit"] {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+#registrar input[type="submit"]:hover {
+  background-color: #fff;
+  color: #0075ff;
+}
+
+#beneficios {
+  text-align: left;
+  align-self: start;
+}
+
+#beneficios h4 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+#beneficios ul {
+  list-style-position: inside;
+}
+
+#beneficios li {
+  margin-bottom: 0.5rem;
+}
+
+
+
+@media (max-width: 450px){
   body {
-    display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
   }
-  
-  /* Apresentação do evento */
-  #about-container {
-    flex: 1.4;
-    padding: 2rem 4rem;
+
+  #sobre {
+    padding: 2rem;
+    padding-bottom: 0;
   }
-  
-  #brand {
-    display: flex;
-    align-items: center;
-    font-size: 0.8rem;
-    margin-bottom: 1rem;
+
+  #sobre h2 {
+    font-size: 3rem;
   }
-  
-  #brand img {
-    height: 50px;
-    margin-right: 0.6rem;
-  }
-  
-  #exclusive {
-    text-transform: uppercase;
-    color: #0075ff;
-    font-weight: bold;
-    font-size: 0.9rem;
-    margin-bottom: 1rem;
-  }
-  
-  #about-container h2 {
-    font-size: 2.4rem;
-    max-width: 500px;
-    margin-bottom: 1rem;
-  }
-  
-  #date {
-    text-transform: uppercase;
-    color: #aaa;
-    margin-bottom: 1rem;
-  }
-  
-  #description {
-    max-width: 500px;
-    margin-bottom: 1rem;
-    line-height: 1.4rem;
-  }
-  
-  #about-container h4 {
+
+  #exclusivo,
+  #data {
     font-size: 1.4rem;
-    margin-bottom: 1rem;
   }
-  
-  #users-container {
-    display: flex;
-    flex-wrap: wrap;
+
+  #descricao {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+  }
+
+  #sobre h4 {
+    font-size: 2rem;
+  }
+
+  #usuarios{
+    flex-direction: column;
+  }
+
+  .usuario {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .usuario img {
+    width: 100%;
+  }
+
+  .usuario .nome {
+    font-size: 1.6rem;
+  }
+
+  .usuario .funcao {
+    font-size: 1.4rem;
+  }
+
+  #interno {
+    margin: 2rem;
+    padding: 2rem;
+  }
+
+  #registrar, #nome {
     gap: 1rem;
   }
-  
-  .user-card {
-    border: 2px solid #ccc;
-    padding: 1rem;
-    width: 180px;
-    text-align: center;
-  }
-  
-  .user-card img {
-    width: 120px;
-    border-radius: 50%;
-    margin-bottom: 1rem;
-  }
-  
-  .user-card .user-name {
-    font-weight: bold;
-    margin-bottom: 0.6rem;
-  }
-  
-  .user-card .user-role {
-    color: #aaa;
-    font-size: 0.9rem;
-  }
-  
-  /* Formulário */
-  #form-container {
-    flex: 1;
-    background-image: url("../img/pattern.png");
-    background-size: cover;
-    color: #fff;
-  }
-  
-  #form-inner {
-    margin: 3rem;
-    padding: 3rem;
-    border: 2px solid #fff;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  #form-inner h3 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  #form-inner p {
-    margin-bottom: 1rem;
-  }
-  
-  #register-form {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    margin-bottom: 2rem;
-  }
-  
-  #name-container {
-    display: flex;
-    gap: 0.5rem;
-  }
-  
-  #register-form input {
-    padding: 0.8rem 0.6rem;
-    border: none;
-    border-radius: 3px;
-  }
-  
-  #email {
-    min-width: 100%;
-  }
-  
-  #register-form input[type="submit"] {
-    background-color: transparent;
-    color: #fff;
-    border: 2px solid #fff;
-    font-size: 1.1rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.4s;
-  }
-  
-  #register-form input[type="submit"]:hover {
-    background-color: #fff;
-    color: #0075ff;
-  }
-  
-  #benefits {
-    text-align: left;
-    align-self: start;
-  }
-  
-  #benefits h4 {
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
-  }
-  
-  #benefits ul {
-    list-style-position: inside;
-  }
-  
-  #benefits li {
-    margin-bottom: 0.5rem;
-  }
-  
-  /* Responsivo */
-  @media (max-width: 450px) {
-    body {
-      flex-direction: column;
-    }
-  
-    #about-container {
-      padding: 2rem;
-      padding-bottom: 0;
-    }
-  
-    #about-container h2 {
-      font-size: 3rem;
-    }
-  
-    #exclusive,
-    #date {
-      font-size: 1.4rem;
-    }
-  
-    #description {
-      font-size: 1.6rem;
-      line-height: 2.2rem;
-    }
-  
-    #about-container h4 {
-      font-size: 2rem;
-    }
-  
-    #users-container {
-      flex-direction: column;
-    }
-  
-    .user-card {
-      width: 100%;
-      padding: 2rem;
-    }
-  
-    .user-card img {
-      width: 180px;
-    }
-  
-    .user-card .user-name {
-      font-size: 1.6rem;
-    }
-  
-    .user-card .user-role {
-      font-size: 1.4rem;
-    }
-  
-    #form-inner {
-      margin: 2rem;
-      padding: 2rem;
-    }
-  
-    #register-form,
-    #name-container {
-      gap: 1rem;
-    }
-  }
+}

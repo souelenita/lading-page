@@ -1,14 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lading page</title>
+  
+  <link rel="stylesheet" href="style.css">
+
+  <title>Lading Page</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
 </head>
+
 <body>
   <div id="sobre">
     <div id="marca">
+      <img src="./img/logo-dev.png" alt="">
       <h1>Semana de Desenvolvimento</h1>
     </div>
     <p id="exclusivo">Curso Exclusivo</p>
@@ -20,16 +29,19 @@
 
     <h4>Palestrantes</h4>
     <div id="usuarios">
-      <div id="usuario">
-        <p class="nome">Elenita Oliveira</p>
+      <div class="usuario">
+        <img src="./img/beyonce-222x222.jpg" alt="">
+        <p class="nome">Beyoncé</p>
         <p class="funcao">Desenvolvedora WEB</p>
       </div>
-      <div id="usuario">
-        <p class="nome">Elenita Oliveira</p>
+      <div class="usuario">
+        <img src="./img/michelle.jpg" alt="">
+        <p class="nome">Michelle Obama</p>
         <p class="funcao">Desenvolvedora WEB</p>
       </div>
-      <div id="usuario">
-        <p class="nome">Elenita Oliveira</p>
+      <div class="usuario">
+        <img src="./img/oprah.jfif" alt="">
+        <p class="nome">Oprah Winfrey</p>
         <p class="funcao">Desenvolvedora WEB</p>
       </div>
     </div>
@@ -41,7 +53,24 @@
       <p>
         Não perca a oportunidade de aprender com especialistas e tirar suas dúvidas
       </p>
+      <form id="registrar">
+        <div id="nome">
+          <input type="text" name="nome" id="nome" placeholder="Nome">  
+        </div>
+        <input type="email" name="email" id="email" placeholder="E-mail">
+        <input type="submit" value="Cadastrar">
+      </form>
+      <div id="beneficios">
+        <h4>O que vamos aprender:</h4>
+        <ul>
+          <li>Como criar o primeiro site</li>
+          <li>Como criar o primeiro site</li>
+          <li>Como criar o primeiro site</li>
+          <li>Como criar o primeiro site</li>
+        </ul>
+      </div>
     </div>
   </div>
+
 </body>
 </html>
